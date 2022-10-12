@@ -35,6 +35,9 @@ Next, we need to import the Covid Data (which is in Excel form found in the "dat
 
 5) After that, simply run the process and the data will be imported into the "Covid_Database" in SSSMS. Do this for both Excel files
 
+## Run SQL script
+The SQL script is located in `covid_sql_project/scripts/covid_queries.sql`. Open the sql file in SSMS and execute the query lines accordingly.
+
 ## Acknowledgement
 This project is done based on the tutorial by Alex the Analyst, his Youtube tutorial video can be found here:
 https://www.youtube.com/watch?v=qfyynHBFOsM&t=886s
