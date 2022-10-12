@@ -7,10 +7,10 @@ Assuming you have not installed any SQL IDEs, I recommend using [SQL Server Mana
 
 In addition, install [SQL Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) if you are using SSMS. This is because we need to connect to a server upon starting up SSMS. SQL Express will be used as our server & instance.
 Once done, in the "Connect to Server" window in SSMS, type the following as the server name `<YOUR_COMPUTER_NAME>\SQLEXPRESS`:
-<img src="imgs/SSMS_connect.png" width="712pix" />
+<img src="imgs/SSMS_connect.png" />
 
 If successful, you should see the following in the "Object Explorer" window in SSMS
-<img src="imgs/SSMS_connect_success.png" width="712pix" />
+<img src="imgs/SSMS_connect_success.png" />
 
 ## Import Project
 If you are using SSMS, you can git clone this repo to your SSMS folder. The default location should be in `Documents/SQL Server Management Studio`.
@@ -22,18 +22,18 @@ git clone https://github.com/leonardlohky/covid_sql
 First, create a new database in SSMS, to hold the Covid data, let's call it `Covid_Database`. To do this, right click on the "Databases" folder and select "New Database...". Rename the newly created database accordingly.
 
 Next, we need to import the Covid Data (which is in Excel form found in the "data" folder of this repo). To import the data, run "SQL Server 2019 Import and Export Data" application.
-Choose "Mircosoft Excel" as the data source type, and state the location of the Excel file
-<img src="imgs/select_data_source.png" width="712pix" />
+1) Choose "Mircosoft Excel" as the data source type, and state the location of the Excel file
+<img src="imgs/select_data_source.png" />
 
-In the choose destination window, select "SQL Server Native Client 11.0" as teh destination, and "Covid_Database" as the database.
-<img src="imgs/data_source_destination.png" width="712pix" />
+2) In the choose destination window, select "SQL Server Native Client 11.0" as teh destination, and "Covid_Database" as the database.
+<img src="imgs/data_source_destination.png" />
 
-Choose the option to "Copy data from one or more tables or views"
+3) Choose the option to "Copy data from one or more tables or views"
 
-Select the table to be copied over to the database in SSMS
-<img src="imgs/select_table.png" width="712pix" />
+4) Select the table to be copied over to the database in SSMS
+<img src="imgs/select_table.png" />
 
-After that, simply run the process and the data will be imported into the "Covid_Database" in SSSMS. Do this for both Excel files
+5) After that, simply run the process and the data will be imported into the "Covid_Database" in SSSMS. Do this for both Excel files
 
 ## Acknowledgement
 This project is done based on the tutorial by Alex the Analyst, his Youtube tutorial video can be found here:
